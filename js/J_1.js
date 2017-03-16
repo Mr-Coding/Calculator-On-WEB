@@ -1,4 +1,4 @@
-//window.ontouchstart = function(e) { e.preventDefault(); }; 
+window.ontouchstart = function(e) { e.preventDefault(); }; 
 $(function(){
 	
 	var $expression  = $(".expression");
