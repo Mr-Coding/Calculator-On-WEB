@@ -1,5 +1,12 @@
 $(function(){
 	
+	$("*").click(function(event){
+		event.preventDefault();
+	})
+	$("a").click(function(event){
+		event.preventDefault();
+	})
+	
 	var $expression  = $(".expression");
 	var $result      = $(".result");
 	$("#delete").dblclick(function(event){
