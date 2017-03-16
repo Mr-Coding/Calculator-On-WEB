@@ -1,10 +1,9 @@
-window.ontouchstart = function(e) { e.preventDefault(); }; 
 $(function(){
 	
 	var $expression  = $(".expression");
 	var $result      = $(".result");
-	$("#delete").click(function(){
-		
+	$("#delete").dblclick(function(){
+		alert("test");
 	});
 	
 	var $one = $("#one").click(function(){
