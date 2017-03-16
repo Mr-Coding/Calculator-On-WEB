@@ -1,6 +1,12 @@
 *{
 	margin: 0px;
 	padding: 0px;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
 }
 html{
 	background-color: #1b335b;
@@ -118,12 +124,6 @@ html{
 	font-size: 1em;
 	background-image: url(../img/delete_but/delete_button_1.png);
 	background-size: 100%;
-	-webkit-touch-callout:none;
-	-webkit-user-select:none;
-	-khtml-user-select:none;
-	-moz-user-select:none;
-	-ms-user-select:none;
-	user-select:none;
 }
 .delete_but:active{
 	background-image: url(../img/delete_but/delete_button_2.png);
