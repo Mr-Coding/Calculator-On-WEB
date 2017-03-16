@@ -2,10 +2,6 @@ $(function(){
 	
 	var $expression  = $(".expression");
 	var $result      = $(".result");
-	$("#one").on("taphold",function(event){
-//		event.preventDefault();
-		alert("test");
-	});
 	
 	var $one = $("#one").click(function(){
 		
