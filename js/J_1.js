@@ -2,8 +2,8 @@ $(function(){
 	
 	var $expression  = $(".expression");
 	var $result      = $(".result");
-	$("#delete").on("taphold",function(event){
-		event.preventDefault();
+	$("#one").on("taphold",function(event){
+//		event.preventDefault();
 		alert("test");
 	});
 	
