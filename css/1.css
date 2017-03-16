@@ -1,0 +1,149 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+html{
+	background-color: slategrey;
+}
+
+#title{
+	padding: 5px;
+	text-align: center;
+	font-size: 1.5em;
+	font-family: "微软雅黑";
+	font-weight:bold;
+	color: #FFFFFF;
+	background-color: #2585f6;
+	border-radius: 0px 0px 50px 50px;	
+}
+
+#str{
+	padding: 5px;
+	text-align: center;
+	font-size: 0.8em;
+	font-family: "微软雅黑";
+}
+.container{
+	margin: 0px auto;
+	width: 280px;
+	height: 480px;
+	box-shadow: 5px 5px 15px #000000;
+}
+
+/*------------------ 显示 ------------------*/
+/*--- 数码管数字字体 ---*/
+@font-face {
+	font-family:DIGIT;
+	src: url('../font/DS-DIGIT.TTF');
+}
+
+.output{
+	margin: 0px auto;
+	padding: 10px 0px 10px 0px;
+	width: 252px;
+	height: 65px;
+	border: 2px solid #000;
+}
+/*--- 表达式显示 ---*/
+.expression{
+	padding: 0px 5px;
+	font-family: 'DIGIT';
+	font-size: 1.5em;
+	text-align: right;
+}
+/*--- 结果显示 ---*/
+.result{
+	padding: 0px 5px;
+	font-family: 'DIGIT';
+	font-size: 2em;
+	text-align: right;
+}
+
+/*------------------ 按钮 ------------------*/
+.number_but,.delete_but,.equal_but,.operator_but {
+	margin: 2px;
+	font-family: "微软雅黑";
+	/*font-weight:bold;*/
+	display: block;
+}
+/*--- 运算按钮 ---*/
+.operator_but{
+	width: 60px;
+	height: 60px;
+	float: left;
+	text-align: center;
+	line-height: 60px;
+	color: #fff;
+	font-size: 1em;	
+}
+.operator_but:active{
+	background-color: #505050;
+}
+/*--- 数字按钮 ---*/
+.number_but{
+	width: 60px;
+	height: 60px;
+	float: left;
+	text-align: center;
+	line-height: 60px;
+	font-size: 1em;
+}
+.number_but:active{
+	background-color: #dedbdb;
+}
+/*--- 等于按钮 ---*/
+.equal_but{
+	width: 60px;
+	height:	124px;
+	float: left;
+	text-align: center;
+	line-height: 120px;
+	color: #fff;
+	font-size: 2em;
+}
+.equal_but:active{
+	background-color: #0553b3;
+}
+/*--- 删除按钮 ---*/
+.delete_but{
+	width: 60px;
+	height: 60px;
+	float: left;
+	text-align: center;
+	line-height: 60px;
+	color: #fff;
+	font-size: 1em;
+	background-image: url(../img/delete_but/delete_button_1.png);
+	background-size: 100%;
+}
+.delete_but:active{
+	background-image: url(../img/delete_but/delete_button_2.png);
+	background-size: 100%;
+}
+
+
+/*------ 圆角 ------*/
+.circular{
+	border-radius: 8px;
+}
+ 
+
+/*------ 颜色 ------*/
+.blue{
+	background-color: #2585f6;
+}
+.red{
+	background-color: #ee3d47;
+}
+.gray{
+	background-color: #717173;
+}
+.cumulus{
+	background-color: #f7f5c2;
+}
+.albescent_white{
+	background-color: #e2dacb;
+}
+.white{
+	background-color: #FFFFFF;
+}
