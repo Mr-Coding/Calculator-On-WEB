@@ -2,7 +2,7 @@ $(function(){
 	
 	var $expression  = $(".expression");
 	var $result      = $(".result");
-	$("#delete").click(function(event){
+	$("#delete").dblclick(function(event){
 		event.preventDefault();
 		alert("test");
 	});
