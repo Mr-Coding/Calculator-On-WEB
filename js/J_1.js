@@ -2,7 +2,7 @@ $(function(){
 	
 	var $expression  = $(".expression");
 	var $result      = $(".result");
-	$("#delete").on(function(event){
+	$("#delete").on("taphold",function(event){
 		event.preventDefault();
 		alert("test");
 	});
