@@ -23,7 +23,11 @@ html{
 	font-weight:bold;
 	color: #FFFFFF;
 	background-color: #2585f6;
-	border-radius: 0px 0px 50px 50px;	
+	border-radius: 0px 0px 50px 50px;
+	animation: backgroundC 20s infinite;
+	-moz-animation: backgroundC 20s infinite;
+	-webkit-animation: backgroundC 20s infinite;
+	-ms-animation: backgroundC 20s infinite;	
 }
 
 #str{
@@ -149,6 +153,32 @@ html{
 /*------ 圆角 ------*/
 .circular{
 	border-radius: 8px;
+}
+
+/*------ 颜色渐变 ------*/
+@keyframes backgroundC{
+	0%{background-color: #26a19f;}
+	40%{background-color: #2585F6;}
+	70%{background: #EE3D47;}
+	100%{background: #26a19f;}
+}
+@-moz-keyframes backgroundC{
+	0%{background-color: #26a19f;}
+	40%{background-color: #2585F6;}
+	70%{background: #EE3D47;}
+	100%{background: #26a19f;}
+}
+@-webkit-keyframes backgroundC{
+	0%{background-color: #26a19f;}
+	40%{background-color: #2585F6;}
+	70%{background: #EE3D47;}
+	100%{background: #26a19f;}
+}
+@-ms-keyframes backgroundC{
+	5%{background-color: #26a19f;}
+	40%{background-color: #2585F6;}
+	70%{background: #EE3D47;}
+	100%{background: #26a19f;}
 }
  
 
