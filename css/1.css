@@ -122,11 +122,11 @@ html{
 	line-height: 60px;
 	color: #fff;
 	font-size: 1em;
-	background-image: url(../img/delete_but/delete_but_1.PNG);
+	background-image: url(../img/delete_but/delete_but_1.jpg);
 	background-size: 100%;
 }
 .delete_but:active{
-	background-image: url(../img/delete_but/delete_but_2.PNG);
+	background-image: url(../img/delete_but/delete_but_2.jpg);
 	background-size: 100%;
 }
 /*--- 删除按钮2 ---*/
@@ -138,11 +138,11 @@ html{
 	line-height: 60px;
 	color: #fff;
 	font-size: 1em;
-	background-image: url(../img/delete_OneBOne/delete_OneBOne_1.PNG);
+	background-image: url(../img/delete_OneBOne/delete_OneBOne_1.jpg);
 	background-size: 100%;
 }
 .delete_OneBOne_but:active{
-	background-image: url(../img/delete_OneBOne/delete_OneBOne_2.PNG);
+	background-image: url(../img/delete_OneBOne/delete_OneBOne_2.jpg);
 	background-size: 100%;
 }
 
