@@ -1,7 +1,7 @@
 $(function(){
 	
-	var $expression  = $(".expression");
-	var $result      = $(".result");
+	var $expression  = $(".expression");//表达式
+	var $result      = $(".result");//结果
 	
 	var $one = $("#one").click(function(){
 		
@@ -31,6 +31,9 @@ $(function(){
 		
 	});
 	var $zero = $("#zero").click(function(){
+		
+	});
+	var $dot = $("#dot").click(function(){
 		
 	});
 	

@@ -7,7 +7,7 @@
 		<script type="text/javascript" src="js/jquery-3.1.1.min.js" ></script>
 		<script type="text/javascript" src="js/J_1.js"></script>
 	</head>
-	<body>
+	<body ontouchstart="">
 		
 		<div id="title">Ching · 勤算</div>
 		
@@ -26,10 +26,10 @@
 			
 			<div id="buttons" style="width: 256px; margin: 0px auto;">
 				<div>
-					<a class="operator_but gray circular" id="left_brack">(</a>
-					<a class="operator_but gray circular" id="right_brack">)</a>
+					<a class="delete_OneBOne_but circular" id="left_brack"></a>
+					<a class="delete_but circular" id="right_brack"></a>
 					<a class="operator_but gray circular" id="division">/</a>
-					<a class="operator_but gray circular" id="multiplication">*</a>
+					<a class="operator_but gray circular" id="multiplication">x</a>
 				</div>
 				<div>
 					<a class="number_but white circular gray circular" id="seven">7</a>
@@ -48,9 +48,9 @@
 							<a class="number_but white circular" id="one">1</a>
 							<a class="number_but white circular" id="two">2</a>
 							<a class="number_but white circular" id="three">3</a>
-							<a class="delete_but circular" id="delete"></a>
-							<a class="number_but white circular" id="zero">0</a>
-							<a class="number_but white circular" id="dot">.</a>
+							<!--<a class="number_but white circular" id="delete"></a>-->
+							<a class="number_but white circular" id="zero" style="width: 124px;">0</a>
+							<a class="number_but white circular" id="dot" style="font-weight: bolder;">.</a>
 					</div>
 					<div style="width: 20%; float: left;">
 						<a class="equal_but blue circular" id="equal">=</a>

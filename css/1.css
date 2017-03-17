@@ -40,7 +40,7 @@ html{
 }
 
 /*------------------ 显示 ------------------*/
-/*--- 数码管数字字体 ---*/
+/*--- 数码管数字字体声明 ---*/
 @font-face {
 	font-family:DIGIT;
 	src: url('../font/DS-DIGIT.TTF');
@@ -69,7 +69,7 @@ html{
 }
 
 /*------------------ 按钮 ------------------*/
-.number_but,.delete_but,.equal_but,.operator_but {
+.number_but,.delete_but,.delete_OneBOne_but,.equal_but,.operator_but {
 	margin: 2px;
 	font-family: "微软雅黑";
 	/*font-weight:bold;*/
@@ -122,14 +122,29 @@ html{
 	line-height: 60px;
 	color: #fff;
 	font-size: 1em;
-	background-image: url(../img/delete_but/delete_button_1.png);
+	background-image: url(../img/delete_but/delete_but_1.png);
 	background-size: 100%;
 }
 .delete_but:active{
-	background-image: url(../img/delete_but/delete_button_2.png);
+	background-image: url(../img/delete_but/delete_but_2.png);
 	background-size: 100%;
 }
-
+/*--- 删除按钮2 ---*/
+.delete_OneBOne_but{
+	width: 60px;
+	height: 60px;
+	float: left;
+	text-align: center;
+	line-height: 60px;
+	color: #fff;
+	font-size: 1em;
+	background-image: url(../img/delete_OneBOne/delete_OneBOne_1.png);
+	background-size: 100%;
+}
+.delete_OneBOne_but:active{
+	background-image: url(../img/delete_OneBOne/delete_OneBOne_2.png);
+	background-size: 100%;
+}
 
 /*------ 圆角 ------*/
 .circular{
