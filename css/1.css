@@ -9,13 +9,17 @@
 	user-select:none;*/
 }
 html{
+	margin: 0px auto;
+	width: 50%;
 	background-color: #1b335b;
-	background-image: url(../img/background/2.JPG);
-	background-size: 200%;
-	background-repeat: no-repeat;
+	/*background-image: url(../img/background/2.JPG);*/
+	/*background-size: 100%;*/
+	/*background-repeat: no-repeat;*/
 }
 
 #title{
+	margin: 0px auto;
+	width: 280px;
 	padding: 5px;
 	text-align: center;
 	font-size: 1.5em;
