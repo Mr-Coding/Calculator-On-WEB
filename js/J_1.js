@@ -1,7 +1,16 @@
 $(function(){
 	
-	var $expression  = $(".expression");//表达式
-	var $result      = $(".result");//结果
+	var $expression = $(".expression");//表达式
+	var $result = $(".result");//结果
+	
+	var $deleteAll = $(".delete_but");//删除所有
+	var $daleteOneBOne = $(".delete_OneBOne_but");//一个一个删除
+	var $equal = $(".equal_but");//等于按钮
+	
+	var $division = $("#division");//除法按钮
+	var $multiplication = $("#multiplication");//乘法按钮
+	var $addition = $("#addition");//加法按钮
+	var $subtraction = $("#subtraction");//减法按钮
 	
 	var $one = $("#one").click(function(){
 		
