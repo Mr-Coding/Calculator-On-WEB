@@ -1,12 +1,12 @@
 *{
 	margin: 0px;
 	padding: 0px;
-	/*-webkit-touch-callout:none;
+	-webkit-touch-callout:none;
 	-webkit-user-select:none;
 	-khtml-user-select:none;
 	-moz-user-select:none;
 	-ms-user-select:none;
-	user-select:none;*/
+	user-select:none;
 }
 html{
 	background-color: #1b335b;
@@ -59,17 +59,32 @@ html{
 }
 /*--- 表达式显示 ---*/
 .expression{
+	height: 23px;
+	width: 242px;
+	overflow: auto;
 	padding: 0px 5px;
+	border: none;
+	background: #f7f5c2;
 	font-family: 'DIGIT';
 	font-size: 1.5em;
 	text-align: right;
+	outline: none; /*去除获取了焦点后的边框*/
+}
+input::-ms-clear{  /*IE去掉input获得焦点是自带的清楚功能*/
+	display:none;
 }
 /*--- 结果显示 ---*/
-.result{
+.result{9
+	height: 18px;
+	width: 242px;
 	padding: 0px 5px;
+	overflow: auto;
+	border: none;
+	background: #f7f5c2;
 	font-family: 'DIGIT';
 	font-size: 2em;
 	text-align: right;
+	outline: none; /*去除获取了焦点后的边框*/
 }
 
 /*------------------ 按钮 ------------------*/
@@ -126,11 +141,11 @@ html{
 	line-height: 60px;
 	color: #fff;
 	font-size: 1em;
-	background-image: url(../img/delete_but/delete_but_1.jpg);
+	background-image: url(../img/delete_OneBOne/delete_OneBOne_1.jpg);
 	background-size: 100%;
 }
 .delete_but:active{
-	background-image: url(../img/delete_but/delete_but_2.jpg);
+	background-image: url(../img/delete_OneBOne/delete_OneBOne_2.jpg);
 	background-size: 100%;
 }
 /*--- 删除按钮2 ---*/
@@ -142,11 +157,11 @@ html{
 	line-height: 60px;
 	color: #fff;
 	font-size: 1em;
-	background-image: url(../img/delete_OneBOne/delete_OneBOne_1.jpg);
+	background-image: url(../img/delete_but/delete_but_1.jpg);
 	background-size: 100%;
 }
 .delete_OneBOne_but:active{
-	background-image: url(../img/delete_OneBOne/delete_OneBOne_2.jpg);
+	background-image: url(../img/delete_but/delete_but_2.jpg);
 	background-size: 100%;
 }
 

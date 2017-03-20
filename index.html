@@ -16,20 +16,16 @@
 			<p id="str">计算器</p>
 			
 			<div class="output cumulus circular" style="margin-bottom: 15px;">
-				<p class="expression">
-					500+20
-				</p>
-				<p class="result" style="padding-top: 10px;">
-					520
-				</p>
+				<input type="text" class="expression" id="expression" value=500+20 />
+				<input type="text" class="result" id="result" value="520" />
 			</div>
 			
 			<div id="buttons" style="width: 256px; margin: 0px auto;">
 				<div>
-					<a class="delete_OneBOne_but circular" id="left_brack"></a>
-					<a class="delete_but circular" id="right_brack"></a>
+					<a class="delete_but circular" id="delete_but"></a>
+					<a class="delete_OneBOne_but circular" id="delete_OneBOne_but"></a>
 					<a class="operator_but gray circular" id="division">/</a>
-					<a class="operator_but gray circular" id="multiplication">x</a>
+					<a class="operator_but gray circular" id="Multiply">x</a>
 				</div>
 				<div>
 					<a class="number_but white circular gray circular" id="seven">7</a>
