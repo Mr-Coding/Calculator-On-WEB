@@ -6,7 +6,8 @@ $(function(){
 	
 	//除法按钮
 	var $division = $("#division").click(function(){
-		$expression.focus();
+//		$expression.focus();
+		changeScrollLeft();
 		var b = isOp($expression.val());
 		if(b === true){
 			changeExpre($expression.html()," / ");
@@ -20,7 +21,8 @@ $(function(){
 	});
 	//乘法按钮
 	var $Multiply = $("#Multiply").click(function(){
-		$expression.focus();
+//		$expression.focus();
+		changeScrollLeft();
 		var b = isOp($expression.val());
 		if(b === true){
 			changeExpre($expression.html()," * ");
@@ -34,7 +36,8 @@ $(function(){
 	});
 	//加法按钮
 	var $addition = $("#addition").click(function(){
-		$expression.focus();
+//		$expression.focus();
+		changeScrollLeft();
 		var b = isOp($expression.val());
 		if(b === true){
 			changeExpre($expression.html()," + ");
@@ -48,7 +51,8 @@ $(function(){
 	});
 	//减法按钮
 	var $subtraction = $("#subtraction").click(function(){
-		$expression.focus();
+//		$expression.focus();
+		changeScrollLeft();
 		var b = isOp($expression.val());
 		if(b === true){
 			changeExpre($expression.html()," - ");
@@ -63,6 +67,7 @@ $(function(){
 	
 	//等于按钮
 	var $equal = $(".equal_but").click(function(){
+		changeScrollLeft();
 		var b = isOp($expression.val());
 		if(b === -1){
 			var str = $expression.val().substring(0,$expression.val().length-1);
@@ -79,13 +84,15 @@ $(function(){
 	
 	//删除所有
 	var $deleteAll = $("#delete_but").click(function(){
-		$expression.focus();
+//		$expression.focus();
+		changeScrollLeft();
 		$expression.val("");
 		$result.val("");
 	});
 	//一个一个删除
 	var $daleteOneBOne = $("#delete_OneBOne_but").click(function(){
-		$expression.focus();
+//		$expression.focus();
+		changeScrollLeft();
 		var b = isOp($expression.val());
 		if(b === -2){
 			var str = $expression.val().substring(0,$expression.val().length-2);
@@ -126,19 +133,27 @@ $(function(){
 		changeExpre($expression.html(),"0");
 	});
 	var $dot = $("#dot").click(function(){
-		$expression.focus();
 		var b = isDot($expression.val());
 		if(b === true){
+			$expression.focus();
 			changeExpre($expression.html(),".");
 		}
 	});
 	
 	function changeExpre(string,number){
 		$expression.val($expression.val()+number);
-		$expression.focus();
+		changeScrollLeft();
+//		$expression.focus();
 	}
 	
+	//让光标移动！！！
+	function changeScrollLeft(){
+		var index = $expression[0].scrollWidth;
+		$expression.scrollLeft(index);
+	}
+
 })
+
 
 //*和/法
 function MultiplyAndDivide(expStr){
@@ -227,5 +242,6 @@ function isOp(opStr){
 	}
 	return true;
 }
+
 
 //判断小数点之后是不是全是0，如是就包括小数点去掉
