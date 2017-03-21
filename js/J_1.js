@@ -79,7 +79,14 @@ $(function(){
 		var exp = $expression.val();
 		var result2 = MultiplyAndDivide(exp);
 		var result1 = AddAndSubtract(result2);
-		$result.val(result2);
+		if(result2 == "Infinity"){
+			$result.css("font-size","1.2em");
+			$result.val("错误，请检查是否有误！");			
+		}else if(result2 == "NaN"){
+			$result.val("+∞");
+		}else{
+			$result.val(result2);
+		}
 	});
 	
 	//删除所有
