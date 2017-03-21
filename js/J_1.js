@@ -135,7 +135,7 @@ $(function(){
 	var $dot = $("#dot").click(function(){
 		var b = isDot($expression.val());
 		if(b === true){
-			$expression.focus();
+//			$expression.focus();
 			changeExpre($expression.html(),".");
 		}
 	});
