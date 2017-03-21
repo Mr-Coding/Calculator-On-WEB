@@ -83,7 +83,7 @@ $(function(){
 			$result.css("font-size","1.2em");
 			$result.val("错误，请检查是否有误！");			
 		}else if(result2 == "NaN"){
-			$result.val("+∞");
+			$result.val("+∞ ");
 		}else{
 			$result.val(result2);
 		}
