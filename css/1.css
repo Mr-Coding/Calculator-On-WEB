@@ -12,7 +12,8 @@ html{
 	background-color: #1b335b;
 	background-image: url(../img/background/2.JPG);
 	background-size: 200%;
-	background-repeat: no-repeat;
+	background-repeat: repeat-y;
+	background-attachment:fixed;
 }
 
 #title{
