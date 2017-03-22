@@ -11,7 +11,8 @@
 html{
 	background-color: #1b335b;
 	background-image: url(../img/background/2.JPG);
-	background-size: 200%;
+	/*background-size: 200%;*/
+	background-size: cover;
 	background-repeat: repeat-y;
 	background-attachment:fixed;
 }
