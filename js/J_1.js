@@ -160,7 +160,7 @@ $(function(){
 	}
 
 
-
+	//菜单相关
 	$(".a1").hover(
 		function(){
 			$(".a1").css("color","#FFFFFF");
