@@ -159,6 +159,64 @@ $(function(){
 		$expression.scrollLeft(index);
 	}
 
+
+
+//	var $LeftContainer = $(".LeftContainer");
+//	var $RightContainer= $(".RightContainer");
+	
+	$(".a1").hover(
+		function(){
+			$(".a1").css("color","#FFFFFF");
+			$(".a2").css("color","#CCCCCC");
+			$(".a3").css("color","#CCCCCC");
+		},
+		function(){
+			$(".a1").css("color","#FFFFFF");
+			$(".a2").css("color","#FFFFFF");
+			$(".a3").css("color","#FFFFFF");
+		}
+	);
+	$(".a2").hover(
+		function(){
+			$(".a2").css("color","#FFFFFF");
+			$(".a1").css("color","#CCCCCC");
+			$(".a3").css("color","#CCCCCC");
+		},
+		function(){
+			$(".a2").css("color","#FFFFFF");
+			$(".a1").css("color","#FFFFFF");
+			$(".a3").css("color","#FFFFFF");
+		}
+	);	
+	$(".a3").hover(
+		function(){
+			$(".a3").css("color","#FFFFFF");
+			$(".a1").css("color","#CCCCCC");
+			$(".a2").css("color","#CCCCCC");
+		},
+		function(){
+			$(".a3").css("color","#FFFFFF");
+			$(".a1").css("color","#FFFFFF");
+			$(".a2").css("color","#FFFFFF");
+		}
+	);
+
+	$(".but1").click(function(){
+		if($(".RightContainer").css("margin-left") != "180px"){
+			$(".RightContainer").animate({
+				marginLeft:'180',
+//				marginTop:'35',
+			});
+		}else{
+			$(".RightContainer").animate({
+				marginLeft:'0',
+//				marginTop:'0'
+			});
+		}
+	});
+	
+
+
 })
 
 
