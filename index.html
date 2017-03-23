@@ -10,64 +10,49 @@
 	</head>
 	<body ontouchstart="">
 		
-		<div class="LeftContainer">
-			<nav class="nav1">
-				<ul>
-					<a class="a1" href="#">首页</a><br />
-					<a class="a2" href="#">项目</a><br />
-					<a class="a3" href="#">关于</a><br />
-				</ul>
-			</nav>
-		</div>
+		<div id="title">Ching · 计算器</div>
 		
-		
-		<div class="Right RightContainer" style="height: 100%;">
-		
-			<div id="title" class="but1">Ching · 计算器</div>
+		<div class="container albescent_white" style="margin-top: 15px;margin-bottom: 20px;">
 			
-			<div class="container albescent_white" style="margin-top: 15px;margin-bottom: 20px;">
-				
-				<p id="str">计算器</p>
-				
-				<div class="output cumulus circular" style="margin-bottom: 15px;">
-					<input type="text" class="expression" id="expression" value="500 + 20" />
-					<input type="text" class="result" id="result" value="520" />
+			<p id="str">计算器</p>
+			
+			<div class="output cumulus circular" style="margin-bottom: 15px;">
+				<input type="text" class="expression" id="expression" value="500 + 20" />
+				<input type="text" class="result" id="result" value="520" />
+			</div>
+			
+			<div id="buttons" style="width: 256px; margin: 0px auto;">
+				<div>
+					<a class="delete_but circular" id="delete_but"></a>
+					<a class="delete_OneBOne_but circular" id="delete_OneBOne_but"></a>
+					<a class="operator_but gray circular" id="division">/</a>
+					<a class="operator_but gray circular" id="Multiply">x</a>
 				</div>
-				
-				<div id="buttons" style="width: 256px; margin: 0px auto;">
-					<div>
-						<a class="delete_but circular" id="delete_but"></a>
-						<a class="delete_OneBOne_but circular" id="delete_OneBOne_but"></a>
-						<a class="operator_but gray circular" id="division">/</a>
-						<a class="operator_but gray circular" id="Multiply">x</a>
-					</div>
-					<div>
-						<a class="number_but white circular gray circular" id="seven">7</a>
-						<a class="number_but white circular gray circular" id="eight">8</a>
-						<a class="number_but white circular gray circular" id="nine">9</a>
-						<a class="operator_but gray circular" id="subtraction">-</a>
-					</div>
-					<div>
-						<a class="number_but white circular gray circular" id="four">4</a>
-						<a class="number_but white circular gray circular" id="five">5</a>
-						<a class="number_but white circular gray circular" id="six">6</a>
-						<a class="operator_but gray circular" id="addition">+</a>
-					</div>
-					<div style="position: relative;">
-						<div style="width: 75%; float: left;">
-								<a class="number_but white circular" id="one">1</a>
-								<a class="number_but white circular" id="two">2</a>
-								<a class="number_but white circular" id="three">3</a>
-								<!--<a class="number_but white circular" id="delete"></a>-->
-								<a class="number_but white circular" id="zero" style="width: 124px;">0</a>
-								<a class="number_but white circular" id="dot" style="font-weight: bolder;">.</a>
-						</div>
-						<div style="width: 20%; float: left;">
-							<a class="equal_but blue circular" id="equal">=</a>
-						</div>
-					</div>	
+				<div>
+					<a class="number_but white circular gray circular" id="seven">7</a>
+					<a class="number_but white circular gray circular" id="eight">8</a>
+					<a class="number_but white circular gray circular" id="nine">9</a>
+					<a class="operator_but gray circular" id="subtraction">-</a>
 				</div>
-				
+				<div>
+					<a class="number_but white circular gray circular" id="four">4</a>
+					<a class="number_but white circular gray circular" id="five">5</a>
+					<a class="number_but white circular gray circular" id="six">6</a>
+					<a class="operator_but gray circular" id="addition">+</a>
+				</div>
+				<div style="position: relative;">
+					<div style="width: 75%; float: left;">
+							<a class="number_but white circular" id="one">1</a>
+							<a class="number_but white circular" id="two">2</a>
+							<a class="number_but white circular" id="three">3</a>
+							<!--<a class="number_but white circular" id="delete"></a>-->
+							<a class="number_but white circular" id="zero" style="width: 124px;">0</a>
+							<a class="number_but white circular" id="dot" style="font-weight: bolder;">.</a>
+					</div>
+					<div style="width: 20%; float: left;">
+						<a class="equal_but blue circular" id="equal">=</a>
+					</div>
+				</div>	
 			</div>
 			
 		</div>

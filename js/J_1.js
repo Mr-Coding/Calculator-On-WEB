@@ -161,9 +161,6 @@ $(function(){
 
 
 
-//	var $LeftContainer = $(".LeftContainer");
-//	var $RightContainer= $(".RightContainer");
-	
 	$(".a1").hover(
 		function(){
 			$(".a1").css("color","#FFFFFF");
@@ -200,7 +197,6 @@ $(function(){
 			$(".a2").css("color","#FFFFFF");
 		}
 	);
-
 	$(".but1").click(function(){
 		if($(".RightContainer").css("margin-left") != "180px"){
 			$(".RightContainer").animate({
